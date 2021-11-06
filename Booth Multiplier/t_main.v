@@ -21,7 +21,7 @@ module t_booth_multiplier; // module creation 2033
     #15 t_shift_control = 1'b1;  // 2033
     t_start=1'b1;
     #20 t_start=1'b0;
-    #80 t_shift_control = 1'b0;   // 2033
+    #90 $finish;   // 2033
   end  //2033
   initial begin
         //$monitor("a=%b,b=%b,sel=%b,out=%b",ta,tb,tsel,tout);
