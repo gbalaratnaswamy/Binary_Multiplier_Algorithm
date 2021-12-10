@@ -37,7 +37,6 @@ module booth_multiplier(
             case(state)
             idle: begin
                 if(start) begin
-                    // TODO: correction for most negative number
                     A <= {m[7],m,9'b000000000};    
                     S <= {most_neg?1'b0:t[7],t,9'b000000000};  
                     P_temp <= {1'b0,7'b0000000,r,2'b0};
