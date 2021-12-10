@@ -1,15 +1,17 @@
+`include "main.v"
+
 module tb();
-    reg [3:0] A;
-    reg [3:0] B;
+    reg [7:0] A;
+    reg [7:0] B;
     
-    wire [7:0] prod;
+    wire [15:0] prod;
     integer i,j,error;
     
-    // wallace m1 (.A(A),.B(B),.prod(prod));
+    wallace_multiplier m1 (prod,A,B);
     initial begin
         error = 0;
-        for(i = 0;i <= 15;i = i+1)
-            for(j = 0;j <= 15;j = j+1) begin
+        for(i = 0;i <= 255;i = i+1)
+            for(j = 0;j <= 255;j = j+1) begin
                 A <= i;
                 B <= j;
                 #1;
