@@ -92,7 +92,7 @@ module wallace_multiplier(
     full_adder f45(s4[8],c4[8],cr3[8],sr3[9],sr2[14]);
     full_adder f46(s4[9],c4[9],cr3[9],sr3[10],sr2[15]);
     full_adder f47(s4[10],c4[10],cr3[10],cr2[15],sr2[16]);
-    half_adder h44(s4[10],c4[10]       ,cr2[16],pr7[7]);
+    half_adder h44(s4[11],c4[11]       ,cr2[16],pr7[7]);
 
     // addition layer and assessment
 
