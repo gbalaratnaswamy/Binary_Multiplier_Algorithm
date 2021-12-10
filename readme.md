@@ -3,3 +3,4 @@ This repo aim is to explore different types of integer binary multiplication alg
 
 Following alogrithms are implemented till now:
  * Booth Multiplier
+ * Wallace Tree Multiplier
