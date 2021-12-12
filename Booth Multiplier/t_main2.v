@@ -46,8 +46,8 @@ module t_booth_multiplier;
         $display("%d",error);
         #10 $finish;
     end
-    initial begin
-        $dumpfile("booth_multiplier3.vcd");
-        $dumpvars;
-    end
-endmodule //2033
+    // initial begin
+    //     $dumpfile("booth_multiplier3.vcd");
+    //     $dumpvars;
+    // end
+endmodule 
